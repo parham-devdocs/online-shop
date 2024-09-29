@@ -2,10 +2,7 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import Navbar from "./UI/navbar";
 import Home from "./pages/home";
-
-function Element() {
-  return <h1>Hello from Products</h1>;
-}
+import ProductsPage from "./pages/products";
 
 
 function NotFound() {
@@ -22,7 +19,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Element />} />
+          <Route path="/products" element={<ProductsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
