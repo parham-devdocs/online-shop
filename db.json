@@ -1,7 +1,282 @@
 {
   "products": [
-    { "id": "1", "title": "classic white t shirt", "description":"a comfortable and versatile classic white T-shirt mad from 100% cotton","category":"T-shirt","brand":"BasicWear" },
-    { "id": "2", "title": "another title", "views": 200 },
+    {
+      "id": "1",
+      "img": "/tshirt1.jpeg",
 
+      "title": "classic white t shirt",
+      "description": "a comfortable and versatile classic white T-shirt mad from 100% cotton",
+      "category": "T-shirt",
+      "brand": "BasicWear",
+      "price": 200
+    },
+    {
+      "id": "2",
+      "img":"/skirt1.jpeg",
+      "title": "line skirt",
+      "description": "a stylish line skirt that flatters all body types",
+      "category": "skirt",
+      "brand": "Chickstyle",
+      "price": 170
+    },
+    {
+      "id": "3",
+      "img": "/skirt2.jpeg",
+
+      "title": "leather skirt",
+      "description": "a stylish leather skirt that provide both comfort and modern look ",
+      "category": "skirt",
+      "brand": "Stepup",
+      "price": 350
+    },
+    {
+      "id": "4",
+      "img": "/suite2.jpg",
+
+      "title": "elegant business suit",
+      "description": "a tailored business suit that combines professionalism with style ",
+      "category": "suite",
+      "brand": "SuiteSavy",
+      "price": 520
+    },
+    {
+      "id": "5",
+      "img": "/suite1.jpg",
+
+      "title": "graphic Tee",
+      "description": "a trendy  ",
+      "category": "suite",
+      "brand": "suiteSavy",
+      "price": 520
+    },
+    {
+      "id": "6",
+      "img": "/skirt3.jpeg",
+
+      "title": "high -waisted denim skirt ",
+      "description": "a trdny high-waisted denim skirt that pairs well with any top ",
+      "category": "skirt",
+      "brand": "DenimDream",
+      "price": 220
+    },
+    {
+      "id": "7",
+      "img": "/suite1.jpg",
+
+      "title": "slip-on shoes",
+      "description": "casual canvas slip-on shoes ,perfect for a laid-back day out ",
+      "category": "shoes",
+      "brand": "EliteTailors",
+      "price": 120
+    },
+    {
+      "id": "8",
+      "img": "/suite1.jpg",
+
+      "title": "tailored grey suit",
+      "description": " a classic tailored grey suit ,ideal for normal occasions and business meetings ",
+      "category": "suite",
+      "brand": "nike",
+      "price": 270
+    },
+    {
+      "id": "9",
+      "img": "/suite2.jpg",
+
+      "title": "tailored grey suit",
+      "description": " a classic tailored grey suit ,ideal for normal occasions and business meetings ",
+      "category": "suite",
+      "brand": "nike",
+      "price": 270
+    },
+    {
+      "id": "10",
+      "img": "/tshirt2.jpeg",
+
+      "title": "vintage band T-shirt",
+      "description": "a stylish T-shirt well paired with cloths of any type and color ",
+      "category": "T-shirt",
+      "brand": "adidas",
+      "price": 150
+    },
+    {
+      "id": "11",
+      "img":"/shoe1.webp",
+      "title": "running shoes",
+      "description": " a sophisticated basic black pair of running shoe",
+      "category": "shoe",
+      "brand": "H&M",
+      "price": 340
+    },
+    {
+      "id": "12",
+      "img": "/suite2.jpg",
+
+      "title": "navy blue suite",
+      "description": " casual canvas slip-on shoes ,perfect for a laid-back day out ",
+      "category": "suite",
+      "brand": "H&M",
+      "price": 620
+    },
+    {
+      "id": "13",
+      "img": "/skirt1.jpeg",
+
+      "title": "floral wrap skirt",
+      "description": " a trdny high-waisted denim skirt that pairs well with any top  ",
+      "category": "skirt",
+      "brand": "Stepup",
+      "price": 190
+    },
+    {
+      "id": "14",
+      "img": "/skirt2.jpeg",
+
+      "title": "sporty skirt",
+      "description": " a trdny high-waisted denim skirt that pairs well with any top ",
+      "category": "skirt",
+      "brand": "Chickstyle",
+      "price": 130
+    },
+    {
+      "id": "15",
+      "img": "/tshirt2.jpeg",
+
+      "title": "classic white t shirt",
+      "description": "a comfortable and versatile classic white T-shirt mad from 100% cotton",
+      "category": "T-shirt",
+      "brand": "BasicWear",
+      "price": 200
+    },
+    {
+      "id": "16",
+      "img": "/skirt2.jpeg",
+
+      "title": "line skirt",
+      "description": "a stylish line skirt that flatters all body types",
+      "category": "skirt",
+      "brand": "Chickstyle",
+      "price": 170
+    },
+    {
+      "id": "17",
+      "img": "/shoe2.jpg",
+
+      "title": "leather sneaker",
+      "description": "a stylish leather sneakers that provide both comfort and modern look ",
+      "category": "shoe",
+      "brand": "Stepup",
+      "price": 350
+    },
+    {
+      "id": "18",
+      "img": "/suite2.jpg",
+
+      "title": "elegant business suit",
+      "description": "a tailored business suit that combines professionalism with style ",
+      "category": "suite",
+      "brand": "SuiteSavy",
+      "price": 520
+    },
+    {
+      "id": "19",
+      "img": "/suite1.jpg",
+
+      "title": "graphic Tee",
+      "description": "a trendy  ",
+      "category": "suite",
+      "brand": "suiteSavy",
+      "price": 520
+    },
+    {
+      "id": "20",
+      "img": "/skirt3.jpeg",
+
+      "title": "high -waisted denim skirt ",
+      "description": "a trdny high-waisted denim skirt that pairs well with any top ",
+      "category": "skirt",
+      "brand": "DenimDream",
+      "price": 220
+    },
+    {
+      "id": "21",
+      "img": "/suite2.jpg",
+
+      "title": "slip-on shoes",
+      "description": "casual canvas slip-on shoes ,perfect for a laid-back day out ",
+      "category": "suite",
+      "brand": "EliteTailors",
+      "price": 120
+    },
+    {
+      "id": "22",
+      "img": "/suite1.jpg",
+
+      "title": "tailored grey suit",
+      "description": " a classic tailored grey suit ,ideal for normal occasions and business meetings ",
+      "category": "suite",
+      "brand": "nike",
+      "price": 270
+    },
+    {
+      "id": "23",
+      "img": "/suite2.jpg",
+
+      "title": "tailored grey suit",
+      "description": " a classic tailored grey suit ,ideal for normal occasions and business meetings ",
+      "category": "suite",
+      "brand": "nike",
+      "price": 270
+    },
+    {
+      "id": "24",
+      "img": "/tshirt1.jpeg",
+
+      "title": "vintage band T-shirt",
+      "description": "a stylish T-shirt well paired with cloths of any type and color ",
+      "category": "T-shirt",
+      "brand": "adidas",
+      "price": 150
+    },
+    {
+      "id": "25",
+      "img": "/shoe2.jpg",
+
+      "title": "running shoes",
+      "description": " a sophisticated basic black pair of running shoe",
+      "category": "shoe",
+      "brand": "H&M",
+      "price": 340
+    },
+    {
+      "id": "26",
+      "img": "/suite1.jpg",
+
+      "title": "navy blue suite",
+      "description": " casual canvas slip-on shoes ,perfect for a laid-back day out ",
+      "category": "suite",
+      "brand": "H&M",
+      "price": 620
+    },
+    {
+      "id": "27",
+      "img": "/skirt3.jpeg",
+
+      "title": "floral wrap skirt",
+      "description": " a trdny high-waisted denim skirt that pairs well with any top  ",
+      "category": "skirt",
+      "brand": "Stepup",
+      "price": 190
+    },
+    {
+      "id": "28",
+      "img": "/skirt1.jpeg",
+
+      "title": "sporty skirt",
+      "description": " a trdny high-waisted denim skirt that pairs well with any top ",
+      "category": "skirt",
+      "brand": "Chickstyle",
+      "price": 130
+    }
   ]
 }

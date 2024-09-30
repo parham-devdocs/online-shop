@@ -14,7 +14,7 @@ export default function ProductCard({
   return (
     <div className="card bg-base-100 w-80 shadow-xl h-[500px]">
       <figure>
-        <img src={img} alt={`${title} image`} />
+        <img src={img} alt={`${title} image`} width={250} height={250} className=" rounded-md" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
