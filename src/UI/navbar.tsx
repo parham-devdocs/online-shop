@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-blue-700 rounded-lg mt-5 sticky ">
+    <div className="navbar bg-violet-700 rounded-lg mt-5 sticky ">
       <div className="navbar-start">
         <div className="dropdown">
           <div

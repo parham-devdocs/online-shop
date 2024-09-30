@@ -1,0 +1,7 @@
+{
+  "products": [
+    { "id": "1", "title": "classic white t shirt", "description":"a comfortable and versatile classic white T-shirt mad from 100% cotton","category":"T-shirt","brand":"BasicWear" },
+    { "id": "2", "title": "another title", "views": 200 },
+
+  ]
+}
