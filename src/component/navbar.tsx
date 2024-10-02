@@ -24,7 +24,7 @@ export default function Navbar() {
           </ul>
         </div>
         <Link to={"/"} className="btn btn-ghost text-xl text-stone-50">
-          daisyUI
+          shopify
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

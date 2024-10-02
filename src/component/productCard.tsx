@@ -18,7 +18,7 @@ export default function ProductCard({
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <h2 className=" text-blue-700">{price}$</h2>
+        <h3 className=" text-blue-700">{price}$</h3>
         <p>{description}</p>
         <div className="card-actions justify-end">
           <button className="btn btn-primary">Add to card</button>

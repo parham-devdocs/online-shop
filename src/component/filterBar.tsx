@@ -2,8 +2,8 @@ import { ChangeEvent, useEffect, useState } from "react";
 import Checkbox from "./checkbox";
 import SearchBar from "./searchBar";
 import axios from "axios";
-import usePaginate from "../hooks/usePaginate";
-
+import { Product } from "../type";
+import { baseUrl } from "../utils";
 const brands = [
   "nike",
   "adidas",
@@ -19,15 +19,7 @@ const brands = [
 
 const categories = ["shoe", "T-shirt", "skirt", "suit"];
 
-type Product = {
-  id: string;
-  img?: string;
-  title: string;
-  description: string;
-  price: number;
-  brand: string;
-  category: string;
-};
+
 
 type Filter = {
   price: number;
@@ -55,10 +47,7 @@ export default function FilterBar({
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const fetchedProducts = await axios.get(
-          "http://localhost:3000/products"
-        );
-        console.log(products);
+        const fetchedProducts = await baseUrl.get('/products')
 
         setProducts(fetchedProducts.data);
       } catch (error) {
@@ -105,12 +94,12 @@ export default function FilterBar({
   }
 
   return (
-    <div className="h-screen flex flex-col w-64 p-2 rounded-lg shadow-2xl space-y-4">
+    <div className="h-screen flex flex-col w-64 p-2 rounded-lg shadow-2xl space-y-4 ">
       <SearchBar />
 
-      <h1 className="text-2xl">Filters</h1>
+      <h2 className="text-2xl">Filters</h2>
       <div className="space-y-4">
-        <h1 className="text-2xl">According to Brand</h1>
+        <h3 className="text-2xl">According to Brand</h3>
         <div className="flex flex-wrap gap-4">
           {brands.map((brand) => (
             <Checkbox
@@ -124,7 +113,7 @@ export default function FilterBar({
         </div>
       </div>
       <div className="space-y-4">
-        <h1 className="text-2xl">According to Category</h1>
+        <h3 className="text-2xl">According to Category</h3>
         <div className="flex flex-wrap gap-4">
           {categories.map((cat) => (
             <Checkbox
@@ -138,7 +127,7 @@ export default function FilterBar({
         </div>
       </div>
       <div className="space-y-4">
-        <h1 className="text-2xl">According to Price</h1>
+        <h3 className="text-2xl">According to Price</h3>
         <div className="flex flex-col">
           <input
             type="range"
