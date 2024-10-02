@@ -13,18 +13,27 @@ type Product = {
   category: string;
 };
 export default function ProductsPage() {
-  const [products, setProducts] = useState<Product[]>([]);
-  useEffect(() => {
-    async function fetchProducts() {
-      const fetchedProducts = await axios.get("http://localhost:3000/products");
-      setProducts(fetchedProducts.data);
-    }
-    fetchProducts();
-  }, []);
+ const [products, setProducts] = useState<Product[]>([]);
+
+   useEffect(() => {
+     async function fetchProducts() {
+       const fetchedProducts = await axios.get(
+         "http://localhost:3000/products"
+       );
+       setProducts(fetchedProducts.data);
+       console.log(products);
+     }
+     fetchProducts();
+   }, []);
 
   return (
     <div className=" px-24">
       <h1 className=" text-3xl my-3">Products</h1>
+      <h1 className=" text-xl">
+        {" "}
+        Number of products found : <span className=" text-blue-700">{products.length}</span>
+      </h1>
+
       <div className=" grid grid-cols-12 gap-4 ">
         <div className=" flex flex-wrap  justify-between mt-10  col-span-10 gap-12">
           {products.map((product) => {
@@ -39,7 +48,12 @@ export default function ProductsPage() {
             );
           })}
         </div>
-        <FilterBar />
+        <FilterBar
+          productUpdater={(filteredProducts) => {
+            setProducts(filteredProducts);
+            console.log(filteredProducts);
+          }}
+        />
       </div>
     </div>
   );
