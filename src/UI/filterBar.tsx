@@ -2,6 +2,7 @@ import { ChangeEvent, useEffect, useState } from "react";
 import Checkbox from "./checkbox";
 import SearchBar from "./searchBar";
 import axios from "axios";
+import usePaginate from "../hooks/usePaginate";
 
 const brands = [
   "nike",

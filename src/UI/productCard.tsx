@@ -2,7 +2,7 @@ type ProductPage = {
   img: string;
   title: string;
   description: string;
-  price: string;
+  price: number;
 };
 
 export default function ProductCard({

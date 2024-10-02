@@ -3,17 +3,20 @@ import FilterBar from "../UI/filterBar";
 import NoProduct from "/no product.png";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import usePaginate from "../hooks/usePaginate";
+import Pagination from "../UI/pagination";
 type Product = {
   id: string;
   img?: string;
   title: string;
   description: string;
-  price: string;
+  price: number;
   brand: string;
   category: string;
 };
 export default function ProductsPage() {
  const [products, setProducts] = useState<Product[]>([]);
+  const { nextPage,prevPage,currentItems,pageNumber } = usePaginate(products);
 
    useEffect(() => {
      async function fetchProducts() {
@@ -21,11 +24,11 @@ export default function ProductsPage() {
          "http://localhost:3000/products"
        );
        setProducts(fetchedProducts.data);
-       console.log(products);
+       
      }
      fetchProducts();
    }, []);
-
+ 
   return (
     <div className=" px-24">
       <h1 className=" text-3xl my-3">Products</h1>
@@ -36,7 +39,7 @@ export default function ProductsPage() {
 
       <div className=" grid grid-cols-12 gap-4 ">
         <div className=" flex flex-wrap  justify-between mt-10  col-span-10 gap-12">
-          {products.map((product) => {
+          {currentItems.map((product) => {
             return (
               <ProductCard
                 key={product.id}
@@ -47,6 +50,7 @@ export default function ProductsPage() {
               />
             );
           })}
+          <Pagination nextPage={nextPage} prevPage={prevPage}/>
         </div>
         <FilterBar
           productUpdater={(filteredProducts) => {
